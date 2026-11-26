@@ -1,0 +1,10 @@
+phase16z_navigation:
+  ros__parameters:
+    # 原始比赛NavSat未设置噪声；1cm测量标准差保留变换和采样误差余量。
+    gps_position_variance_m2: 0.0001
+    # 自船急制动和倒车属于加速运动；位置仍使用原始测量方差。
+    motion_model: constant_acceleration
+    # 已存输入验证位置滤波优于瞬时杆臂速度；原始速度保留供独立诊断。
+    fuse_gps_velocity: false
+    # 原始船模GPS/IMU安装关节运动范围为0，使用导出的完整模型安装外参。
+    use_model_sensor_mounts: true

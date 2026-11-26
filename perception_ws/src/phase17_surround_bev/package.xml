@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>phase17_surround_bev</name>
+  <version>0.1.0</version>
+  <description>Surround-view projection and camera calibration checks.</description>
+  <maintainer email="phase17@invalid.local">Phase17</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>python3-setuptools</buildtool_depend>
+  <depend>ament_index_python</depend>
+  <depend>rclpy</depend>
+  <depend>rosbag2_py</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,19 @@
+{
+  "task_completed": true,
+  "state": "COMPLETE",
+  "bay_id": 1,
+  "stamp_sim_s": 488.776,
+  "position_xy_m": [
+    -530.1769470758685,
+    160.19502500948107
+  ],
+  "speed_mps": 0.14232289001232995,
+  "elapsed_wall_s": 685.823269525,
+  "elapsed_sim_s": 488.672,
+  "max_single_plan_duration_s": 0.2909293030000981,
+  "max_control_cycle_s": 0.2923368740000569,
+  "max_force_execution_s": 0.006490058000053978,
+  "max_force_schedule_lateness_sim_s": 0.016000000000019554,
+  "force_schedule_transition_count": 0,
+  "source": "production_navigation_and_verified_berth"
+}

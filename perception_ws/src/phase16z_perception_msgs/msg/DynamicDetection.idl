@@ -1,0 +1,30 @@
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module phase16z_perception_msgs {
+  module msg {
+    struct DynamicDetection {
+      std_msgs::msg::Header header;
+      string observation_id;
+      geometry_msgs::msg::Point center;
+      float radius_m;
+      uint32 support;
+      float position_std_m;
+      float range_m;
+      float confidence;
+      sequence<string> source_sensors;
+      float z_min_m;
+      float z_max_m;
+      float vertical_extent_m;
+      float horizontal_major_extent_m;
+      float horizontal_minor_extent_m;
+      float surface_normal_up_abs;
+      uint32 vertical_voxel_layers;
+      float vertical_surface_fraction;
+      float organized_vertical_stack_fraction;
+      float mean_min_vertical_range_delta_m;
+      float organized_normal_valid_fraction;
+      boolean entity_evidence;
+    };
+  };
+};

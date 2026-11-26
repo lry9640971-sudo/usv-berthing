@@ -1,0 +1,1052 @@
+{
+  "berthing_sensors": [
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "back_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          -0.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          -0.0
+        ],
+        "xyz_m": [
+          -0.7,
+          -0.0,
+          2.05
+        ]
+      },
+      "reference_link": "wamv/back_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/back_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/back_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "name": "contact_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "xyz_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "scene": "berthing_user",
+      "sensor_type": "contact",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 1.0471975511965976,
+        "horizontal_min_angle_rad": -1.0471975511965976,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 200.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 0.1308996938995747,
+        "vertical_min_angle_rad": -0.1308996938995747,
+        "vertical_samples": 96
+      },
+      "name": "forward_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "xyz_m": [
+          0.75,
+          0.0,
+          1.65
+        ]
+      },
+      "reference_link": "wamv/forward_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/forward_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/forward_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "front_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          180.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          3.141592654
+        ],
+        "xyz_m": [
+          0.7,
+          0.0,
+          2.05
+        ]
+      },
+      "reference_link": "wamv/front_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/front_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/front_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "name": "imu_wamv_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "xyz_m": [
+          0.3,
+          -0.2,
+          1.3
+        ]
+      },
+      "reference_link": "wamv/imu_wamv_link",
+      "ros_topics": {
+        "imu": "/wamv/sensors/imu/imu/data"
+      },
+      "ros_types": {
+        "imu": "sensor_msgs/msg/Imu"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "imu",
+      "update_rate_hz": 100.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "left_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          -90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          -1.570796327
+        ],
+        "xyz_m": [
+          -0.0,
+          0.45,
+          2.05
+        ]
+      },
+      "reference_link": "wamv/left_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/left_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/left_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "name": "navsat",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "xyz_m": [
+          -0.85,
+          0.0,
+          1.3
+        ]
+      },
+      "reference_link": "wamv/gps_wamv_link",
+      "ros_topics": {
+        "fix": "/wamv/sensors/gps/gps/fix"
+      },
+      "ros_types": {
+        "fix": "sensor_msgs/msg/NavSatFix"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "navsat",
+      "update_rate_hz": 20.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "right_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          1.570796327
+        ],
+        "xyz_m": [
+          -0.0,
+          -0.45,
+          2.05
+        ]
+      },
+      "reference_link": "wamv/right_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/right_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/right_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "berthing_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    }
+  ],
+  "bridge_contract": {
+    "camera": {
+      "gz_suffix": "/image",
+      "ros_suffix": "sensors/cameras/{sensor_name}/image_raw",
+      "ros_type": "sensor_msgs/msg/Image"
+    },
+    "camera_info": {
+      "gz_suffix": "/camera_info",
+      "ros_suffix": "sensors/cameras/{sensor_name}/camera_info",
+      "ros_type": "sensor_msgs/msg/CameraInfo"
+    },
+    "gps": {
+      "ros_topic": "/wamv/sensors/gps/gps/fix",
+      "ros_type": "sensor_msgs/msg/NavSatFix"
+    },
+    "imu": {
+      "ros_topic": "/wamv/sensors/imu/imu/data",
+      "ros_type": "sensor_msgs/msg/Imu"
+    },
+    "lidar_points": {
+      "gz_suffix": "/scan/points",
+      "ros_suffix": "sensors/lidars/{sensor_name}/points",
+      "ros_type": "sensor_msgs/msg/PointCloud2"
+    },
+    "lidar_scan": {
+      "gz_suffix": "/scan",
+      "ros_suffix": "sensors/lidars/{sensor_name}/scan",
+      "ros_type": "sensor_msgs/msg/LaserScan"
+    }
+  },
+  "commit": "75babf08680736cb932b8e078fdeae1531a10134",
+  "coordinate_convention": {
+    "gazebo_world": "SDF world_frame_orientation=ENU",
+    "ros": "REP-103 右手系：base_link +X 前、+Y 左、+Z 上；米和弧度",
+    "urdf_rpy": "固定轴 roll-pitch-yaw，弧度；矩阵按 Rz(yaw)*Ry(pitch)*Rx(roll)"
+  },
+  "evidence_locations": {
+    "berthing_generator": "package://usvsim/src/vrx/vrx_gz/random_world_generator_berthing.py",
+    "berthing_sensor_xacro": {
+      "camera_disabled_line": 172,
+      "first_lidar_line": 181,
+      "gps_line": 136,
+      "imu_line": 141,
+      "path": "package://usvsim/src/vrx/vrx_urdf/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro"
+    },
+    "dock_base_model": "package://usvsim/src/vrx/vrx_gz/models/dock_2022_base/model.sdf",
+    "dock_model": "package://usvsim/src/vrx/vrx_gz/models/dock_2022/model.sdf",
+    "lidar_spec": "package://usvsim/src/vrx/vrx_urdf/wamv_gazebo/urdf/components/lidar.xacro",
+    "model_payload_mapping": "package://usvsim/src/vrx/vrx_gz/src/vrx_gz/model.py",
+    "obstacle_tracker": "package://usvsim/src/vrx/vrx_gz/src/vrx_gz/obstacle_tracker.py",
+    "payload_bridge": "package://usvsim/src/vrx/vrx_gz/src/vrx_gz/payload_bridges.py",
+    "perception_generator": "package://usvsim/src/vrx/vrx_gz/random_world_generator_perception.py",
+    "perception_sensor_xacro": {
+      "first_camera_line": 97,
+      "first_lidar_line": 146,
+      "path": "package://usvsim/src/vrx/vrx_urdf/wamv_gazebo/urdf/wamv_large_gazebo.urdf.xacro"
+    }
+  },
+  "perception_sensors": [
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "back_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          180.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          3.141592654
+        ],
+        "xyz_m": [
+          -7.0,
+          0.0,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/back_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/back_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "back_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          -0.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          -0.0
+        ],
+        "xyz_m": [
+          -7.0,
+          -0.0,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/back_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/back_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/back_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 1.0471975511965976,
+        "horizontal_min_angle_rad": -1.0471975511965976,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 200.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 0.1308996938995747,
+        "vertical_min_angle_rad": -0.1308996938995747,
+        "vertical_samples": 96
+      },
+      "name": "forward_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "xyz_m": [
+          7.0,
+          0.0,
+          1.58
+        ]
+      },
+      "reference_link": "wamv/forward_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/forward_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/forward_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "front_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          0.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          0.0
+        ],
+        "xyz_m": [
+          7.0,
+          0.0,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/front_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/front_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "front_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          180.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          3.141592654
+        ],
+        "xyz_m": [
+          7.0,
+          0.0,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/front_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/front_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/front_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "left2_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          90.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          1.570796327
+        ],
+        "xyz_m": [
+          6.0,
+          1.6264,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/left2_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/left2_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "left2_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          -90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          -1.570796327
+        ],
+        "xyz_m": [
+          6.0,
+          1.6264,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/left2_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/left2_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/left2_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "left_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          90.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          1.570796327
+        ],
+        "xyz_m": [
+          -6.0,
+          1.6264,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/left_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/left_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "left_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          -90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          -1.570796327
+        ],
+        "xyz_m": [
+          -6.0,
+          1.6264,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/left_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/left_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/left_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 500.0,
+        "clip_near_m": 0.5,
+        "format": "R8G8B8",
+        "height": 1280,
+        "horizontal_fov_deg": 119.977362,
+        "horizontal_fov_rad": 2.094,
+        "lens": null,
+        "width": 1280
+      },
+      "name": "overhead_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          89.99979,
+          180.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.570792654,
+          3.141592654
+        ],
+        "xyz_m": [
+          0.0,
+          0.0,
+          11.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/overhead_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/overhead_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "right2_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          -90.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          -1.570796327
+        ],
+        "xyz_m": [
+          6.0,
+          -1.6264,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/right2_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/right2_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "right2_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          1.570796327
+        ],
+        "xyz_m": [
+          6.0,
+          -1.6264,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/right2_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/right2_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/right2_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    },
+    {
+      "camera": {
+        "clip_far_m": 200.0,
+        "clip_near_m": 0.05,
+        "format": "R8G8B8",
+        "height": 720,
+        "horizontal_fov_deg": 174.981311,
+        "horizontal_fov_rad": 3.054,
+        "lens": {
+          "custom_function": {
+            "c1": "1.05",
+            "c2": "4",
+            "f": "1.0",
+            "fun": "tan"
+          },
+          "env_texture_size": "2048",
+          "scale_to_hfov": "true",
+          "type": "custom"
+        },
+        "width": 1280
+      },
+      "name": "right_camera_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          0.0,
+          25.0,
+          -90.0
+        ],
+        "rpy_rad": [
+          0.0,
+          0.436332313,
+          -1.570796327
+        ],
+        "xyz_m": [
+          -6.0,
+          -1.6264,
+          1.95
+        ]
+      },
+      "reference_link": "wamv/base_link",
+      "ros_topics": {
+        "camera_info": "/wamv/sensors/cameras/right_camera_sensor/camera_info",
+        "image": "/wamv/sensors/cameras/right_camera_sensor/image_raw"
+      },
+      "ros_types": {
+        "camera_info": "sensor_msgs/msg/CameraInfo",
+        "image": "sensor_msgs/msg/Image"
+      },
+      "scene": "perception_user",
+      "sensor_type": "wide_angle_camera",
+      "update_rate_hz": 5.0
+    },
+    {
+      "lidar": {
+        "horizontal_max_angle_rad": 3.141592653589793,
+        "horizontal_min_angle_rad": -3.141592653589793,
+        "horizontal_resolution": 1.0,
+        "horizontal_samples": 360,
+        "max_range_m": 60.0,
+        "min_range_m": 0.1,
+        "noise_stddev_m": 0.02,
+        "vertical_max_angle_rad": 1.5707963267948966,
+        "vertical_min_angle_rad": 0.0,
+        "vertical_samples": 48
+      },
+      "name": "right_lidar_sensor",
+      "nominal_pose_from_base_link": {
+        "rpy_deg": [
+          180.0,
+          65.0,
+          90.0
+        ],
+        "rpy_rad": [
+          3.141592654,
+          1.134464014,
+          1.570796327
+        ],
+        "xyz_m": [
+          -6.0,
+          -1.6264,
+          1.85
+        ]
+      },
+      "reference_link": "wamv/right_lidar_link",
+      "ros_topics": {
+        "points": "/wamv/sensors/lidars/right_lidar_sensor/points",
+        "scan": "/wamv/sensors/lidars/right_lidar_sensor/scan"
+      },
+      "ros_types": {
+        "points": "sensor_msgs/msg/PointCloud2",
+        "scan": "sensor_msgs/msg/LaserScan"
+      },
+      "scene": "perception_user",
+      "sensor_type": "gpu_ray",
+      "update_rate_hz": 10.0
+    }
+  ],
+  "public_noise_implementation": {
+    "dock_prior_noise": {
+      "conclusion": "generator 的 DOCK_POSE 同时驱动 SDF 和 obstacle_tracker 参数；tracker 原样发布，无随机噪声或协方差。",
+      "dock_pose": [
+        -533.0,
+        162.0,
+        0.3,
+        0.0,
+        0.0,
+        -1.658
+      ],
+      "implemented": false
+    },
+    "sensor_pose_0_5m_10deg": {
+      "conclusion": "当前公开 xacro/launch/generator 使用固定标称位姿；随机函数只用于船与场景实体，没有对传感器 joint/sensor pose 做扰动。",
+      "implemented": false
+    }
+  },
+  "repo": "package://usvsim",
+  "tracked_count": 427,
+  "tracked_status": "",
+  "tree": "9952e074f1113f4091f32d69e4ad9309b1b17423"
+}

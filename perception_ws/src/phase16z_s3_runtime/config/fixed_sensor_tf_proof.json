@@ -1,0 +1,35 @@
+{
+  "schema": "phase16z_fixed_sensor_tf_proof_v1",
+  "model_name": "wamv",
+  "model_source": "package://wamv_gazebo/urdf/wamv_gazebo.urdf.xacro",
+  "model_sha256": "8205a865bd4c38ee88c392535f48209f32d1cab192dadd53f735b2e9225e54c2",
+  "sdf_path_in_runtime": "external_scene/perception_user_world_fixed_15349.sdf",
+  "sdf_sha256": "47693131780dfc46797aedaf3dc5facc3fb9c946029284ce80e5f339f5341213",
+  "tf_chain": {
+    "back": "wamv/wamv/base_link -> wamv/wamv/base_link/back_lidar_sensor",
+    "forward": "wamv/wamv/base_link -> wamv/wamv/base_link/forward_lidar_sensor",
+    "front": "wamv/wamv/base_link -> wamv/wamv/base_link/front_lidar_sensor",
+    "left": "wamv/wamv/base_link -> wamv/wamv/base_link/left_lidar_sensor",
+    "right": "wamv/wamv/base_link -> wamv/wamv/base_link/right_lidar_sensor"
+  },
+  "fixed_sensor_frames": [
+    "wamv/wamv/base_link/back_lidar_sensor",
+    "wamv/wamv/base_link/forward_lidar_sensor",
+    "wamv/wamv/base_link/front_lidar_sensor",
+    "wamv/wamv/base_link/left_lidar_sensor",
+    "wamv/wamv/base_link/right_lidar_sensor",
+    "wamv/wamv/gps_wamv_link/navsat",
+    "wamv/wamv/imu_wamv_link/imu_wamv_sensor"
+  ],
+  "gps_chain": "wamv/wamv/base_link -> wamv/wamv/gps_wamv_link -> wamv/wamv/gps_wamv_link/navsat",
+  "imu_chain": "wamv/wamv/base_link -> wamv/wamv/imu_wamv_link -> wamv/wamv/imu_wamv_link/imu_wamv_sensor",
+  "fixed_chain_runtime_evidence": {
+    "lidar_sensor_tf_stamp_s": [0.024, 147.704],
+    "gps_parent_tf_stamp_s": [0.056, 147.656],
+    "imu_parent_tf_stamp_s": [0.056, 147.656],
+    "leaf_sensor_tf_stamp_s": [0.024, 147.704],
+    "translations_constant_in_bag": true
+  },
+  "proof_method": "same-WSL model and fixed SDF hashes plus runtime TF chain header/child validation; fixed chains are only used for sensor-to-base observation transforms",
+  "world_localization_not_inferred_from_sensor_tf": true
+}

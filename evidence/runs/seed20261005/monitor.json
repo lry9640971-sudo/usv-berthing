@@ -1,0 +1,1030 @@
+{
+  "elapsed_wall_s": 840.867730307,
+  "truth_stamp_sim_s": 522.352,
+  "truth_position_xyyaw": [
+    -530.1558760019752,
+    160.2724025996779,
+    -1.682307639882814
+  ],
+  "truth_speed_mps": 0.14278236759352922,
+  "pose_names_sample": [
+    "berth_sign",
+    "buoy_0",
+    "buoy_1",
+    "buoy_2",
+    "buoy_3",
+    "buoy_4",
+    "buoy_5",
+    "buoy_6",
+    "buoy_7",
+    "buoy_8",
+    "buoy_9",
+    "buoy_10",
+    "buoy_11",
+    "buoy_12",
+    "buoy_13",
+    "buoy_14",
+    "buoy_15",
+    "buoy_16",
+    "buoy_17",
+    "buoy_18",
+    "buoy_19",
+    "buoy_20",
+    "buoy_21",
+    "buoy_22",
+    "buoy_23",
+    "buoy_24",
+    "buoy_25",
+    "buoy_26",
+    "buoy_27",
+    "buoy_28",
+    "buoy_29",
+    "buoy_30",
+    "buoy_31",
+    "buoy_32",
+    "buoy_33",
+    "buoy_34",
+    "buoy_35",
+    "buoy_36",
+    "buoy_37",
+    "buoy_38",
+    "boat30",
+    "boat31",
+    "boat32",
+    "boat33",
+    "boat34",
+    "boat35",
+    "boat36",
+    "boat37",
+    "boat38",
+    "boat39",
+    "boat40",
+    "boat41",
+    "wamv",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link",
+    "link"
+  ],
+  "pose_subscription_ok": true,
+  "contact_subscription_ok": true,
+  "counts": {
+    "truth_pose_messages": 25132,
+    "contact_stream_messages": 61212,
+    "tracks_messages": 3714,
+    "nonempty_tracks_messages": 1432
+  },
+  "events": [],
+  "lidar": {
+    "back": {
+      "count": 5224,
+      "first_stamp_sim_s": 0.0,
+      "last_stamp_sim_s": 522.304,
+      "width": 360,
+      "height": 48,
+      "frame_id": "wamv/wamv/base_link/back_lidar_sensor",
+      "finite_points_sample": 2927,
+      "total_points_sample": 17280,
+      "last_finite_sample_sim_s": 520.0
+    },
+    "forward": {
+      "count": 5224,
+      "first_stamp_sim_s": 0.0,
+      "last_stamp_sim_s": 522.304,
+      "width": 360,
+      "height": 96,
+      "frame_id": "wamv/wamv/base_link/forward_lidar_sensor",
+      "finite_points_sample": 33412,
+      "total_points_sample": 34560,
+      "last_finite_sample_sim_s": 520.0
+    },
+    "front": {
+      "count": 5224,
+      "first_stamp_sim_s": 0.0,
+      "last_stamp_sim_s": 522.304,
+      "width": 360,
+      "height": 48,
+      "frame_id": "wamv/wamv/base_link/front_lidar_sensor",
+      "finite_points_sample": 8859,
+      "total_points_sample": 17280,
+      "last_finite_sample_sim_s": 520.0
+    },
+    "left": {
+      "count": 5224,
+      "first_stamp_sim_s": 0.0,
+      "last_stamp_sim_s": 522.304,
+      "width": 360,
+      "height": 48,
+      "frame_id": "wamv/wamv/base_link/left_lidar_sensor",
+      "finite_points_sample": 6848,
+      "total_points_sample": 17280,
+      "last_finite_sample_sim_s": 520.0
+    },
+    "right": {
+      "count": 5223,
+      "first_stamp_sim_s": 0.0,
+      "last_stamp_sim_s": 522.2,
+      "width": 360,
+      "height": 48,
+      "frame_id": "wamv/wamv/base_link/right_lidar_sensor",
+      "finite_points_sample": 7448,
+      "total_points_sample": 17280,
+      "last_finite_sample_sim_s": 520.0
+    }
+  },
+  "perception": {
+    "tracking": {
+      "schema": "phase16z_dynamic_tracking_status_v2",
+      "status": "READY",
+      "reason": "TRACKING_OUTPUT_READY",
+      "callback_metrics": {
+        "navigation_callback": {
+          "count": 10439,
+          "last_s": 8.694100006323424e-05,
+          "max_s": 0.48180361099997526,
+          "message_age_sim_s": 0.0
+        },
+        "_process_base_detections": {
+          "count": 3711,
+          "last_s": 0.1774829989999489,
+          "max_s": 0.5155860549999716,
+          "message_age_sim_s": 0.24
+        },
+        "base_detections_callback": {
+          "count": 3768,
+          "last_s": 0.1775187639999558,
+          "max_s": 0.5156236450000051,
+          "message_age_sim_s": 0.24
+        }
+      },
+      "odometry_message_count": 10439,
+      "odometry_rejected_count": 0,
+      "tracks_measurement_age_s": 0.4,
+      "dynamic_tracks_output_count": 3711,
+      "velocity_valid_output_count": 3185
+    },
+    "berthing": {
+      "schema": "team/berthing_status_v1",
+      "status": "READY",
+      "reason": "POINTCLOUD_GEOMETRY_VALIDATED",
+      "last_input_issue": "",
+      "last_output_stamp_ns": 521800000000,
+      "output_age_wall_s": 0.12344438699994953,
+      "measurement_age_sim_s": 0.2,
+      "inputs_seen": {
+        "/world/obstacles/dock": 419,
+        "/team/localization/odometry": 10439,
+        "INSUFFICIENT_FRESH_LIDARS": 5,
+        "/wamv/sensors/lidars/back_lidar_sensor/points": 4766,
+        "/wamv/sensors/lidars/front_lidar_sensor/points": 4858,
+        "/wamv/sensors/lidars/left_lidar_sensor/points": 4919,
+        "PARTIAL_OR_ASYNC_LIDAR_FRAME": 4792,
+        "DOCK_STAMP_DOMAIN_MISMATCH": 5218,
+        "/wamv/sensors/lidars/right_lidar_sensor/points": 4460,
+        "OUTPUT_FRAMES": 5124,
+        "INVALID_FRAMES": 4851,
+        "/wamv/sensors/lidars/forward_lidar_sensor/points": 1068,
+        "LATEST_FRAME_REPLACED": 94,
+        "VALID_FRAMES": 273
+      },
+      "last_result": {
+        "valid": true,
+        "geometry_score": 0.10193366743169033,
+        "support": 0.8423776774840604,
+        "active_groups": 3,
+        "prior_range_m": 3.2546845352469793,
+        "refined_dock_base": [
+          -1.211667330514828,
+          -3.012844548601044,
+          0.06169672957659834
+        ],
+        "refined_dock_world": [
+          -533.0111097915913,
+          161.96608999204597,
+          -1.6445884557209958
+        ],
+        "occupancy": [
+          {
+            "status": "FREE",
+            "confidence": 0.928125,
+            "cells": 0,
+            "observed_fraction": 0.9375
+          },
+          {
+            "status": "FREE",
+            "confidence": 0.95,
+            "cells": 0,
+            "observed_fraction": 1.0
+          },
+          {
+            "status": "FREE",
+            "confidence": 0.95,
+            "cells": 0,
+            "observed_fraction": 1.0
+          }
+        ],
+        "processing_s": 0.1511664260000316,
+        "raw_points": 69120,
+        "feature_cells": 3205,
+        "sync_span_ms": 96.0,
+        "input_mode": "PARTIAL_FRESH",
+        "active_lidar_count": 4
+      }
+    },
+    "localization": {
+      "schema": "phase16z_navigation_status_v2",
+      "status": "READY",
+      "reason": "LOCALIZATION_READY",
+      "public_frame": "team_enu",
+      "base_frame": "wamv/wamv/base_link",
+      "gps_age_ms": 48.0,
+      "imu_age_ms": 8.0,
+      "gps_message_count": 10440,
+      "imu_message_count": 52197,
+      "localization_output_count": 10439,
+      "callback_metrics": {
+        "gps_callback": {
+          "count": 10440,
+          "last_s": 0.0009949259999757487,
+          "max_s": 0.01280210200000198,
+          "message_age_sim_s": 0.0
+        },
+        "imu_callback": {
+          "count": 52197,
+          "last_s": 0.00024696699995274685,
+          "max_s": 0.004489101999979539,
+          "message_age_sim_s": 0.0
+        }
+      },
+      "gps_velocity_topic": "/wamv/sensors/gps/gps/velocity",
+      "gps_velocity_pairs": 0,
+      "gps_velocity_fused": false,
+      "gps_position_variance_m2": 0.0001,
+      "motion_model": "constant_acceleration",
+      "estimated_acceleration_enu_mps2": [
+        -0.18055415177331507,
+        0.44396452582539636
+      ],
+      "sensor_mount_source": "MODEL_ZERO_RANGE_MOUNT",
+      "mount_live_tf_deviation": {
+        "wamv/wamv/imu_wamv_link/imu_wamv_sensor": {
+          "status": "TF_DIAGNOSTIC_UNAVAILABLE",
+          "reason": "Lookup would require extrapolation into the future.  Requested time 521.864000 but the latest data is at time 521.856000, when looking up transform from frame [wamv/wamv/imu_wamv_link/imu_wamv_sensor] to frame [wamv/wamv/base_link]"
+        },
+        "wamv/wamv/gps_wamv_link/navsat": {
+          "status": "TF_DIAGNOSTIC_UNAVAILABLE",
+          "reason": "Lookup would require extrapolation into the future.  Requested time 521.656000 but the latest data is at time 521.640000, when looking up transform from frame [wamv/wamv/gps_wamv_link/navsat] to frame [wamv/wamv/base_link]"
+        }
+      },
+      "gps_velocity_rejections": 0,
+      "angular_motion_window_s": 0.2,
+      "gps_pair_pending": {
+        "fix": 0,
+        "velocity": 21
+      },
+      "angular_rate_source": "ORIENTATION_BODY_MOTION",
+      "angular_rate_raw_residual_xyz_rad_s": [
+        -0.0024509012945059536,
+        0.00489070691853286,
+        2.7089954257738404
+      ],
+      "angular_rate_variance_xyz": [
+        1.5319963732799257e-07,
+        5.776852229052019e-11,
+        0.003349468568966742
+      ],
+      "attitude_source": "CAUSAL_QUADRATIC_ORIENTATION",
+      "lever_projection_variance_xy_m2": [
+        0.00015094061411468257,
+        3.084817075708863e-06
+      ]
+    },
+    "environment": {
+      "schema": "team/local_environment_status_v1",
+      "status": "READY",
+      "reason": "PARTIAL_FRESH_LIDAR_GRID_VALID",
+      "last_output_stamp_ns": 521800000000,
+      "output_age_wall_s": 0.13071047000005365,
+      "inputs_seen": {
+        "INSUFFICIENT_FRESH_LIDARS": 12,
+        "/wamv/sensors/lidars/back_lidar_sensor/points": 4336,
+        "/wamv/sensors/lidars/front_lidar_sensor/points": 4354,
+        "/wamv/sensors/lidars/left_lidar_sensor/points": 4529,
+        "PARTIAL_OR_ASYNC_LIDAR_FRAME": 4914,
+        "/wamv/sensors/lidars/right_lidar_sensor/points": 3778,
+        "DOCK_MESSAGE_VALID": 273,
+        "OUTPUT_FRAMES": 4691,
+        "/wamv/sensors/lidars/forward_lidar_sensor/points": 1057,
+        "LATEST_FRAME_REPLACED": 519
+      },
+      "last_result": {
+        "valid": true,
+        "processing_s": 0.14371636999999282,
+        "phase_s": {
+          "extraction": 0.09860346300001765,
+          "grid": 0.03383699899995918,
+          "publication": 0.011275908000015988
+        },
+        "measurement_age_sim_s": 0.104,
+        "sync_span_ms": 96.0,
+        "input_mode": "PARTIAL_FRESH",
+        "active_lidar_count": 4,
+        "ordinary_obstacle_count": 2,
+        "dock_geometry_fused": true,
+        "raw_occupied_cells": 1034,
+        "physical_occupied_cells": 1537,
+        "inflated_occupied_cells": 3631,
+        "padding_cells": 2094,
+        "free_cells": 204,
+        "unknown_cells": 156165,
+        "sensors": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": {
+            "raw_points": 17280,
+            "finite_points": 3500,
+            "self_points": 2327,
+            "water_plane_points": 0,
+            "water_plane_rows": 0,
+            "water_plane_rms": 0.0,
+            "eligible_points": 1123,
+            "structure_points": 642,
+            "finite_rays": 199,
+            "free_only_rays": 40,
+            "terrain": {
+              "water_elevation_m": 0.0,
+              "observed_water_reference": false,
+              "terrain_points": 642,
+              "terrain_edge_points": 0,
+              "accepted_slope_patches": 0
+            }
+          },
+          "/wamv/sensors/lidars/front_lidar_sensor/points": {
+            "raw_points": 17280,
+            "finite_points": 11278,
+            "self_points": 2030,
+            "water_plane_points": 0,
+            "water_plane_rows": 0,
+            "water_plane_rms": 0.0,
+            "eligible_points": 7466,
+            "structure_points": 4238,
+            "finite_rays": 433,
+            "free_only_rays": 25,
+            "terrain": {
+              "water_elevation_m": 0.0,
+              "observed_water_reference": false,
+              "terrain_points": 2299,
+              "terrain_edge_points": 0,
+              "accepted_slope_patches": 0
+            }
+          },
+          "/wamv/sensors/lidars/left_lidar_sensor/points": {
+            "raw_points": 17280,
+            "finite_points": 8002,
+            "self_points": 2343,
+            "water_plane_points": 0,
+            "water_plane_rows": 0,
+            "water_plane_rms": 0.0,
+            "eligible_points": 4968,
+            "structure_points": 2522,
+            "finite_rays": 285,
+            "free_only_rays": 21,
+            "terrain": {
+              "water_elevation_m": 0.0,
+              "observed_water_reference": false,
+              "terrain_points": 2133,
+              "terrain_edge_points": 0,
+              "accepted_slope_patches": 0
+            }
+          },
+          "/wamv/sensors/lidars/right_lidar_sensor/points": {
+            "raw_points": 17280,
+            "finite_points": 7504,
+            "self_points": 2343,
+            "water_plane_points": 0,
+            "water_plane_rows": 0,
+            "water_plane_rms": 0.0,
+            "eligible_points": 4394,
+            "structure_points": 2291,
+            "finite_rays": 286,
+            "free_only_rays": 19,
+            "terrain": {
+              "water_elevation_m": 0.0,
+              "observed_water_reference": false,
+              "terrain_points": 2188,
+              "terrain_edge_points": 23,
+              "accepted_slope_patches": 1
+            }
+          }
+        }
+      }
+    },
+    "candidate": {
+      "actuator_publishers": 0,
+      "base_frame": "wamv/wamv/base_link",
+      "clock": {
+        "first_stamp_ns": 8000000,
+        "last_stamp_ns": 522000000000,
+        "message_count": 65250,
+        "regressions": 0
+      },
+      "cluster_parameters": {
+        "cloud_water_plane_level_filter": false,
+        "cluster_center_mode": "pca_bbox",
+        "cluster_center_radial_offset_m": 0.2,
+        "cluster_radius_m": 0.55,
+        "defer_sync": false,
+        "detection_z_max_m": 1.5,
+        "detection_z_min_m": -0.5,
+        "dual_path_evidence_merge_distance_m": 1.5,
+        "last_cloud_phases": {
+          "decode_features_s": 0.0018951260000221737,
+          "input_age_sim_s": 0.104,
+          "point_filter_s": 0.01187592400003723,
+          "sensor": "left",
+          "tf_s": 0.00010883400000238908
+        },
+        "last_cloud_processing_s": 0.01401495100003558,
+        "last_group_processing_s": 1.9496000049912254e-05,
+        "maximum_clusters": 400,
+        "maximum_detection_range_m": 80.0,
+        "maximum_vertical_range_delta_m": 0.3,
+        "maximum_vertical_surface_normal_up_abs": 0.7,
+        "minimum_support": 1,
+        "minimum_vertical_consistent_neighbors": 2,
+        "organized_dual_path": true,
+        "organized_structure_only": false,
+        "ownship_z_max_m": 3.0,
+        "ownship_z_min_m": -1.0,
+        "structural_cluster_radius_m": 0.9,
+        "structural_voxel_size_m": 0.5,
+        "sync_tolerance_ms": 100.0,
+        "voxel_size_m": 0.35,
+        "worker_queue_capacity": 5,
+        "worker_queue_peak": 5,
+        "worker_replaced_by_topic": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 372,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 38,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 384,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 390,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 285
+        },
+        "worker_threads": 1
+      },
+      "detections_topic": "/team/perception/dynamic_detections_base",
+      "elapsed_wall_s": 837.3798697469999,
+      "fixed_sensor_tf_proof": {
+        "fixed_chain_runtime_evidence": {
+          "gps_parent_tf_stamp_s": [
+            0.056,
+            147.656
+          ],
+          "imu_parent_tf_stamp_s": [
+            0.056,
+            147.656
+          ],
+          "leaf_sensor_tf_stamp_s": [
+            0.024,
+            147.704
+          ],
+          "lidar_sensor_tf_stamp_s": [
+            0.024,
+            147.704
+          ],
+          "translations_constant_in_bag": true
+        },
+        "fixed_sensor_frames": [
+          "wamv/wamv/base_link/back_lidar_sensor",
+          "wamv/wamv/base_link/forward_lidar_sensor",
+          "wamv/wamv/base_link/front_lidar_sensor",
+          "wamv/wamv/base_link/left_lidar_sensor",
+          "wamv/wamv/base_link/right_lidar_sensor",
+          "wamv/wamv/gps_wamv_link/navsat",
+          "wamv/wamv/imu_wamv_link/imu_wamv_sensor"
+        ],
+        "gps_chain": "wamv/wamv/base_link -> wamv/wamv/gps_wamv_link -> wamv/wamv/gps_wamv_link/navsat",
+        "imu_chain": "wamv/wamv/base_link -> wamv/wamv/imu_wamv_link -> wamv/wamv/imu_wamv_link/imu_wamv_sensor",
+        "model_name": "wamv",
+        "model_sha256": "8205a865bd4c38ee88c392535f48209f32d1cab192dadd53f735b2e9225e54c2",
+        "model_source": "package://wamv_gazebo/urdf/wamv_gazebo.urdf.xacro",
+        "proof_method": "same-WSL model and fixed SDF hashes plus runtime TF chain header/child validation; fixed chains are only used for sensor-to-base observation transforms",
+        "schema": "phase16z_fixed_sensor_tf_proof_v1",
+        "sdf_path_in_runtime": "external_scene/perception_user_world_fixed_15349.sdf",
+        "sdf_sha256": "47693131780dfc46797aedaf3dc5facc3fb9c946029284ce80e5f339f5341213",
+        "tf_chain": {
+          "back": "wamv/wamv/base_link -> wamv/wamv/base_link/back_lidar_sensor",
+          "forward": "wamv/wamv/base_link -> wamv/wamv/base_link/forward_lidar_sensor",
+          "front": "wamv/wamv/base_link -> wamv/wamv/base_link/front_lidar_sensor",
+          "left": "wamv/wamv/base_link -> wamv/wamv/base_link/left_lidar_sensor",
+          "right": "wamv/wamv/base_link -> wamv/wamv/base_link/right_lidar_sensor"
+        },
+        "world_localization_not_inferred_from_sensor_tf": true
+      },
+      "forbidden_topics_subscribed": [],
+      "gt_input_subscription_count": 0,
+      "input_funnel": {
+        "base_detection_empty_messages": 0,
+        "base_detection_messages": 3834,
+        "base_detection_nonempty_messages": 3834,
+        "base_detection_objects": 549147,
+        "drop_reasons": {
+          "base_detection": {},
+          "pointcloud": {
+            "OLD_MEASUREMENT_SKIPPED": 1,
+            "worker_same_sensor_replaced_for_freshness": 1469
+          },
+          "sync": {
+            "asynchronous_group_deferred_to_timestamped_enu_fusion": 1196,
+            "late_row_after_monotonic_output": 946,
+            "partial_group_emitted": 2990
+          }
+        },
+        "five_pointcloud_finite_points": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 14500824,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 10556191,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 11952415,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 12409265,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 16147365
+        },
+        "five_pointcloud_messages": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 4692,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 1068,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 4670,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 4760,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 4202
+        },
+        "five_pointcloud_messages_total": 19392,
+        "five_pointcloud_raw_points": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 74649600,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 35562240,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 74062080,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 75513600,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 67685760
+        },
+        "sync_group_sensor_count_histogram": {
+          "1": 144,
+          "2": 129,
+          "3": 602,
+          "4": 2115,
+          "5": 844
+        },
+        "sync_group_width": 5,
+        "sync_groups": 3834
+      },
+      "pointcloud_frames": {
+        "/wamv/sensors/lidars/back_lidar_sensor/points": [
+          "wamv/wamv/base_link/back_lidar_sensor"
+        ],
+        "/wamv/sensors/lidars/forward_lidar_sensor/points": [
+          "wamv/wamv/base_link/forward_lidar_sensor"
+        ],
+        "/wamv/sensors/lidars/front_lidar_sensor/points": [
+          "wamv/wamv/base_link/front_lidar_sensor"
+        ],
+        "/wamv/sensors/lidars/left_lidar_sensor/points": [
+          "wamv/wamv/base_link/left_lidar_sensor"
+        ],
+        "/wamv/sensors/lidars/right_lidar_sensor/points": [
+          "wamv/wamv/base_link/right_lidar_sensor"
+        ]
+      },
+      "pointcloud_funnel": {
+        "accepted_points": 7065901,
+        "candidates_emitted": 597632,
+        "clusters_rejected_support": 0,
+        "clusters_seen": 598471,
+        "drop_reasons": {
+          "candidate_height_gate": 20343080,
+          "candidate_range_gate": 8121,
+          "nonfinite_xyz": 261907220,
+          "true_ownship_footprint_3d": 38148958
+        },
+        "dropped_height": 20343080,
+        "dropped_nonfinite": 261907220,
+        "dropped_self_body": 38148958,
+        "estimated_water_plane": {
+          "frames": 0,
+          "maximum_projection_m": null,
+          "mean_projection_m": null,
+          "minimum_projection_m": null
+        },
+        "finite_points": 65566060,
+        "input_points": 327473280,
+        "voxel_cells": 2305680
+      },
+      "pointcloud_funnel_by_topic": {
+        "/wamv/sensors/lidars/back_lidar_sensor/points": {
+          "accepted_points": 925476,
+          "candidates_emitted": 0,
+          "clusters_rejected_support": 0,
+          "clusters_seen": 0,
+          "drop_reasons": {
+            "candidate_height_gate": 3536219,
+            "nonfinite_xyz": 60148776,
+            "true_ownship_footprint_3d": 10039129
+          },
+          "dropped_height": 3536219,
+          "dropped_nonfinite": 60148776,
+          "dropped_self_body": 10039129,
+          "estimated_water_plane": {
+            "frames": 0,
+            "maximum_projection_m": null,
+            "mean_projection_m": null,
+            "minimum_projection_m": null
+          },
+          "finite_points": 14500824,
+          "input_points": 74649600,
+          "voxel_cells": 0
+        },
+        "/wamv/sensors/lidars/forward_lidar_sensor/points": {
+          "accepted_points": 2007079,
+          "candidates_emitted": 0,
+          "clusters_rejected_support": 0,
+          "clusters_seen": 0,
+          "drop_reasons": {
+            "candidate_height_gate": 8540991,
+            "candidate_range_gate": 8121,
+            "nonfinite_xyz": 25006049
+          },
+          "dropped_height": 8540991,
+          "dropped_nonfinite": 25006049,
+          "dropped_self_body": 0,
+          "estimated_water_plane": {
+            "frames": 0,
+            "maximum_projection_m": null,
+            "mean_projection_m": null,
+            "minimum_projection_m": null
+          },
+          "finite_points": 10556191,
+          "input_points": 35562240,
+          "voxel_cells": 0
+        },
+        "/wamv/sensors/lidars/front_lidar_sensor/points": {
+          "accepted_points": 1100595,
+          "candidates_emitted": 0,
+          "clusters_rejected_support": 0,
+          "clusters_seen": 0,
+          "drop_reasons": {
+            "candidate_height_gate": 2151988,
+            "nonfinite_xyz": 62109665,
+            "true_ownship_footprint_3d": 8699832
+          },
+          "dropped_height": 2151988,
+          "dropped_nonfinite": 62109665,
+          "dropped_self_body": 8699832,
+          "estimated_water_plane": {
+            "frames": 0,
+            "maximum_projection_m": null,
+            "mean_projection_m": null,
+            "minimum_projection_m": null
+          },
+          "finite_points": 11952415,
+          "input_points": 74062080,
+          "voxel_cells": 0
+        },
+        "/wamv/sensors/lidars/left_lidar_sensor/points": {
+          "accepted_points": 635917,
+          "candidates_emitted": 0,
+          "clusters_rejected_support": 0,
+          "clusters_seen": 0,
+          "drop_reasons": {
+            "candidate_height_gate": 1536573,
+            "nonfinite_xyz": 63104335,
+            "true_ownship_footprint_3d": 10236775
+          },
+          "dropped_height": 1536573,
+          "dropped_nonfinite": 63104335,
+          "dropped_self_body": 10236775,
+          "estimated_water_plane": {
+            "frames": 0,
+            "maximum_projection_m": null,
+            "mean_projection_m": null,
+            "minimum_projection_m": null
+          },
+          "finite_points": 12409265,
+          "input_points": 75513600,
+          "voxel_cells": 0
+        },
+        "/wamv/sensors/lidars/right_lidar_sensor/points": {
+          "accepted_points": 2396834,
+          "candidates_emitted": 0,
+          "clusters_rejected_support": 0,
+          "clusters_seen": 0,
+          "drop_reasons": {
+            "candidate_height_gate": 4577309,
+            "nonfinite_xyz": 51538395,
+            "true_ownship_footprint_3d": 9173222
+          },
+          "dropped_height": 4577309,
+          "dropped_nonfinite": 51538395,
+          "dropped_self_body": 9173222,
+          "estimated_water_plane": {
+            "frames": 0,
+            "maximum_projection_m": null,
+            "mean_projection_m": null,
+            "minimum_projection_m": null
+          },
+          "finite_points": 16147365,
+          "input_points": 67685760,
+          "voxel_cells": 0
+        }
+      },
+      "pointcloud_shape": {
+        "/wamv/sensors/lidars/back_lidar_sensor/points": {
+          "fields": [
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "x",
+              "offset": 0
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "y",
+              "offset": 4
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "z",
+              "offset": 8
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "intensity",
+              "offset": 16
+            },
+            {
+              "count": 1,
+              "datatype": 4,
+              "name": "ring",
+              "offset": 24
+            }
+          ],
+          "height": 48,
+          "is_bigendian": false,
+          "is_dense": false,
+          "point_step": 32,
+          "row_step": 11520,
+          "width": 360
+        },
+        "/wamv/sensors/lidars/forward_lidar_sensor/points": {
+          "fields": [
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "x",
+              "offset": 0
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "y",
+              "offset": 4
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "z",
+              "offset": 8
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "intensity",
+              "offset": 16
+            },
+            {
+              "count": 1,
+              "datatype": 4,
+              "name": "ring",
+              "offset": 24
+            }
+          ],
+          "height": 96,
+          "is_bigendian": false,
+          "is_dense": false,
+          "point_step": 32,
+          "row_step": 11520,
+          "width": 360
+        },
+        "/wamv/sensors/lidars/front_lidar_sensor/points": {
+          "fields": [
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "x",
+              "offset": 0
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "y",
+              "offset": 4
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "z",
+              "offset": 8
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "intensity",
+              "offset": 16
+            },
+            {
+              "count": 1,
+              "datatype": 4,
+              "name": "ring",
+              "offset": 24
+            }
+          ],
+          "height": 48,
+          "is_bigendian": false,
+          "is_dense": false,
+          "point_step": 32,
+          "row_step": 11520,
+          "width": 360
+        },
+        "/wamv/sensors/lidars/left_lidar_sensor/points": {
+          "fields": [
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "x",
+              "offset": 0
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "y",
+              "offset": 4
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "z",
+              "offset": 8
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "intensity",
+              "offset": 16
+            },
+            {
+              "count": 1,
+              "datatype": 4,
+              "name": "ring",
+              "offset": 24
+            }
+          ],
+          "height": 48,
+          "is_bigendian": false,
+          "is_dense": false,
+          "point_step": 32,
+          "row_step": 11520,
+          "width": 360
+        },
+        "/wamv/sensors/lidars/right_lidar_sensor/points": {
+          "fields": [
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "x",
+              "offset": 0
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "y",
+              "offset": 4
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "z",
+              "offset": 8
+            },
+            {
+              "count": 1,
+              "datatype": 7,
+              "name": "intensity",
+              "offset": 16
+            },
+            {
+              "count": 1,
+              "datatype": 4,
+              "name": "ring",
+              "offset": 24
+            }
+          ],
+          "height": 48,
+          "is_bigendian": false,
+          "is_dense": false,
+          "point_step": 32,
+          "row_step": 11520,
+          "width": 360
+        }
+      },
+      "pointcloud_topics": [
+        "/wamv/sensors/lidars/back_lidar_sensor/points",
+        "/wamv/sensors/lidars/forward_lidar_sensor/points",
+        "/wamv/sensors/lidars/front_lidar_sensor/points",
+        "/wamv/sensors/lidars/left_lidar_sensor/points",
+        "/wamv/sensors/lidars/right_lidar_sensor/points"
+      ],
+      "schema": "phase16z_s3_lidar_pointcloud_candidate_runtime_v1",
+      "sensor_tf": {
+        "attempts": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 4320,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 1029,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 4286,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 4370,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 3917
+        },
+        "exact_lookup_misses_recovered": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 0
+        },
+        "exact_successes": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 4320,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 1029,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 4286,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 4370,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 3917
+        },
+        "failures": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 0
+        },
+        "latest_rigid_fallbacks": {
+          "/wamv/sensors/lidars/back_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/forward_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/front_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/left_lidar_sensor/points": 0,
+          "/wamv/sensors/lidars/right_lidar_sensor/points": 0
+        }
+      },
+      "status": "RUNNING",
+      "world_input_subscription_count": 0
+    }
+  },
+  "navigation": {
+    "imu_xyzw": [
+      0.0377532244890662,
+      0.03376175131933845,
+      -0.7444560892963247,
+      0.6657476769003042
+    ],
+    "odom_xyz_xyzw": [
+      -530.1515379652221,
+      160.2720595705696,
+      0.1616569662197722,
+      0.037935395090047834,
+      0.033555809982577296,
+      -0.7408344686448246,
+      0.6697754873713396
+    ]
+  },
+  "completion_truth": {
+    "report_stamp_sim_s": 522.0,
+    "truth_stamp_sim_s": 522.0,
+    "position_xy_m": [
+      -530.1772734520185,
+      160.32019983691472
+    ],
+    "speed_mps": 0.18558933962685414
+  }
+}

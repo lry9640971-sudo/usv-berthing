@@ -1,0 +1,75 @@
+{
+  "scope": "production_inputs_only; excludes_evaluation_GT",
+  "source_run": "acceptance_20261005_20261004_231553",
+  "stamp_sim_s": 189.304,
+  "vessel": {
+    "x": -621.8258052633113,
+    "y": 274.3661321126559,
+    "yaw": -0.8925726406092762,
+    "surge": 0.49238823096967194,
+    "sway": -0.17950550531628257,
+    "yaw_rate": -0.005471201232900942
+  },
+  "guidance": {
+    "goal_xy": [
+      -528.9662811888804,
+      173.69312244667012
+    ],
+    "desired_surge": 0.8959871471012248,
+    "desired_yaw_rate": 0.05345872720309855,
+    "goal_yaw": null,
+    "terminal": false,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "constant"
+  },
+  "disturbance": {
+    "force_world_x_n": -13.536155210738697,
+    "force_world_y_n": -19.336192808812996,
+    "yaw_moment_nm": -8.861562472016798
+  },
+  "moving_obstacles": [],
+  "previous_setpoint": [
+    0.8969397356242775,
+    0.0
+  ],
+  "previous_force_n": {
+    "left_n": 93.94410544905858,
+    "right_n": 100.10208562846819
+  },
+  "old_plan_status": "NO_SAFE_TRAJECTORY",
+  "old_published_force_n": {
+    "left_n": 346.24569062311093,
+    "right_n": -400.0
+  },
+  "prediction_initial_vessel": {
+    "x": -621.7154304232287,
+    "y": 274.08619120113167,
+    "yaw": -0.8949811441801659,
+    "surge": 0.6534716581485939,
+    "sway": -0.18059428814497755,
+    "yaw_rate": -0.0043490404773863294
+  },
+  "prediction_stamp_sim_s": 189.8,
+  "execution_vessel": {
+    "x": -621.7154304232287,
+    "y": 274.08619120113167,
+    "yaw": -0.8949811441801659,
+    "surge": 0.6534716581485939,
+    "sway": -0.18059428814497755,
+    "yaw_rate": -0.0043490404773863294
+  },
+  "execution_stamp_sim_s": 189.8,
+  "decision_diagnostics": {
+    "decision": "actuation_range_escape",
+    "emergency_candidates_evaluated": 32,
+    "constant_force_candidates_evaluated": 9,
+    "sequence_candidates_evaluated": 216,
+    "sequence_safe_candidates": 2,
+    "sequence_certification_attempts": 0,
+    "sequence_budget_reached": true,
+    "prediction_stamp_sim_s": 189.8,
+    "selection_at_execution_state": true
+  },
+  "plan_duration_s": 0.7783030979999808
+}

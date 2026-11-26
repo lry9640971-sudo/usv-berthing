@@ -1,0 +1,13 @@
+phase17_surround_bev:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: wamv/base_link
+    sync_tolerance_ms: 40.0
+    process_period_sec: 0.02
+    status_period_sec: 1.0
+    output_topic: /team/perception/surround_bev
+    official_output_topic: /world/obstacles/bev_check
+    confidence_topic: /team/perception/surround_bev_confidence
+    status_topic: /team/perception/surround_bev_status
+    calibration_state: D0_RELATIVE_EXTRINSICS_RECOVERED_DEV
+    receipt_path: ""

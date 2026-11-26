@@ -1,0 +1,23 @@
+{
+  "frozen_revision": "8602b06",
+  "regression_passed": 236,
+  "regression_evidence": "evidence/regression_navigation_attitude_projection_01",
+  "mode": "acceptance",
+  "seed": 20261005,
+  "original_initial_pose": [
+    -711.0,
+    355.8,
+    0.0,
+    0.0,
+    0.0,
+    0.971
+  ],
+  "static_count": 87,
+  "dynamic_count": 12,
+  "original_lidar_count": 5,
+  "pose_override": false,
+  "controller_wall_limit_s": 900,
+  "rendering": "EGL llvmpipe LP_NUM_THREADS=6",
+  "change_scope": "causal_orientation_pose_fit_and_actual_gps_lever_covariance_only_original_control_safety_and_gates_unchanged",
+  "scope": "same frozen business; truth only independently evaluates; diagnostic recording disabled"
+}

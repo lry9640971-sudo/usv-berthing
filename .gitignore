@@ -1,0 +1,34 @@
+# ROS 2 and Python build output
+build/
+install/
+log/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+
+# Local execution and data
+/runtime_output/
+/evidence/regression_*/
+!/evidence/regression_navigation_attitude_projection_01/
+!/evidence/regression_instantaneous_completion_contract_01/
+*.mcap
+*.db3
+*.bag
+*.zip
+
+# Runtime assets supplied separately by an authorized provider
+/control_ws/src/competition_user/config/vessel_dynamics.yaml
+/perception_ws/src/phase16z_s3_runtime/config/dynamic_semantic_background_v2.json
+/perception_ws/src/phase16z_s3_runtime/config/hull_collision_footprint_base_link.yaml
+/perception_ws/src/phase16z_s3_runtime/config/model_sensor_mounts.yaml
+/perception_ws/src/phase16z_s3_runtime/config/visual_self_geometry.yaml
+/perception_ws/src/phase17_berthing_perception/config/full_dock_collision_points.csv
+/perception_ws/src/phase17_berthing_perception/config/hull_collision_footprint_base_link.yaml
+/perception_ws/src/phase17_berthing_perception/config/visual_self_geometry.yaml
+/perception_ws/src/phase17_surround_bev/config/masked_fixed_geometry_bev_lut.npz
+
+# Local tools
+.venv/
+.idea/
+.vscode/

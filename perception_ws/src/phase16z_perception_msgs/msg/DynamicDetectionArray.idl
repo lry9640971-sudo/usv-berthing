@@ -1,0 +1,11 @@
+#include "phase16z_perception_msgs/msg/DynamicDetection.idl"
+#include "std_msgs/msg/Header.idl"
+
+module phase16z_perception_msgs {
+  module msg {
+    struct DynamicDetectionArray {
+      std_msgs::msg::Header header;
+      sequence<phase16z_perception_msgs::msg::DynamicDetection> detections;
+    };
+  };
+};

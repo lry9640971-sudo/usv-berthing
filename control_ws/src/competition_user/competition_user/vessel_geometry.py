@@ -1,0 +1,6 @@
+"""完整原始 H 型 WAM-V 的物理尺寸；生成证据见 geometry_report.json。"""
+
+# 原始 54 件碰撞投影最大半径 3.093513862 m，厘米向上取整覆盖离散误差。
+SHIP_CIRCUMRADIUS = 3.10
+DYNAMIC_OBSTACLE_RADIUS = 1.5
+DYNAMIC_COLLISION_DISTANCE = SHIP_CIRCUMRADIUS + DYNAMIC_OBSTACLE_RADIUS + .3

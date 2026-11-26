@@ -1,0 +1,43 @@
+{
+  "controller_version": "closed_loop_rebuild",
+  "state": "COMPLETE",
+  "reason": "POSITION_AND_SPEED_REACHED",
+  "input_status": "READY",
+  "position_xy_m": [
+    -530.1775734961816,
+    160.18344329938316
+  ],
+  "measurement_stamp_sim_s": 488.752,
+  "measurement_age_s": 0.11199999999996635,
+  "speed_mps": 0.10592820293536302,
+  "elapsed_wall_s": 686.054103383,
+  "elapsed_sim_s": 488.76,
+  "selected_bay": {
+    "bay_id": 1,
+    "entry_pose": [
+      -529.3917891385082,
+      169.6437718336363,
+      -1.653974085019645
+    ],
+    "final_pose": [
+      -530.1810669981647,
+      160.17661595342304,
+      -1.653974085019645
+    ]
+  },
+  "navigation_completed": true,
+  "max_single_plan_duration_s": 0.2909293030000981,
+  "max_control_cycle_s": 0.2923368740000569,
+  "plan_status": "SAFE",
+  "published_force_n": {
+    "left_n": 40.84873397831511,
+    "right_n": -67.19342440891971
+  },
+  "input_rejections": {},
+  "static_map_cells": 21125,
+  "dynamic_track_count": 0,
+  "route_status": "ROUTE_AVAILABLE",
+  "max_force_execution_s": 0.006490058000053978,
+  "max_force_schedule_lateness_sim_s": 0.016000000000019554,
+  "force_schedule_transition_count": 0
+}

@@ -1,0 +1,89 @@
+{
+  "stop_reason": "CONTROLLER_COMPLETION",
+  "official_single_run_passed": true,
+  "gates": {
+    "controller_reported_completion": true,
+    "independent_position": true,
+    "static_avoidance": true,
+    "dynamic_avoidance": true,
+    "contact_speed": true,
+    "independent_completion_speed": true,
+    "maximum_planning_and_control_s": true,
+    "runtime_wall_s": true
+  },
+  "collision_episodes": {
+    "static": 0,
+    "dynamic": 0
+  },
+  "total_obstacles": {
+    "static": 88,
+    "dynamic": 12
+  },
+  "avoidance_success_fraction": {
+    "static": 1.0,
+    "dynamic": 1.0
+  },
+  "berth_contact_speed_mps": [],
+  "contact_speed_evidence": "NOT_OBSERVED",
+  "independent_completion_speed_mps": 0.14133333678893345,
+  "completion_velocity_reference": "centered_40ms_instantaneous_quadratic",
+  "legacy_preceding_0p2s_speed_mps": 0.20267223854178867,
+  "independent_target_xy_m": [
+    -530.1420392824178,
+    160.2444201707819
+  ],
+  "independent_final_position_error_m": 0.07986438884220866,
+  "elapsed_wall_s": 723.9169634159999,
+  "elapsed_sim_s": 492.64000000000004,
+  "maximum_planning_and_control_s": 0.35084788599988315,
+  "controller_report": {
+    "task_completed": true,
+    "state": "COMPLETE",
+    "bay_id": 1,
+    "stamp_sim_s": 492.504,
+    "position_xy_m": [
+      -530.1355542542756,
+      160.16712429377202
+    ],
+    "speed_mps": 0.12893002252256577,
+    "elapsed_wall_s": 722.023057646,
+    "elapsed_sim_s": 492.40000000000003,
+    "max_single_plan_duration_s": 0.3503426849999869,
+    "max_control_cycle_s": 0.35084788599988315,
+    "max_force_execution_s": 0.001957223999852431,
+    "max_force_schedule_lateness_sim_s": 0.03999999999996362,
+    "force_schedule_transition_count": 0,
+    "source": "production_navigation_and_verified_berth"
+  },
+  "monitor_counts": {
+    "contact_stream_messages": 58003,
+    "truth_pose_messages": 23444,
+    "tracks_messages": 3390,
+    "nonempty_tracks_messages": 685
+  },
+  "selected_bay": {
+    "bay_id": 1,
+    "entry_pose": [
+      -529.3949062160251,
+      169.6525496362672,
+      -1.652139093626483
+    ],
+    "final_pose": [
+      -530.1668106070478,
+      160.18396137765546,
+      -1.652139093626483
+    ]
+  },
+  "evaluation_scope": "single_run_independent_evaluation_requires_five_frozen_version_runs",
+  "mode": "acceptance",
+  "process_return_codes": {
+    "simulation": 0,
+    "resources": 0,
+    "monitor": 0,
+    "perception": 0,
+    "controller": 0
+  },
+  "evaluation_revision": "instantaneous_completion_v2",
+  "source_case": "acceptance_20261003_20261005_012827",
+  "previous_evaluation": "result_legacy_average_v1.json"
+}

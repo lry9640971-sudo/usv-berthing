@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>phase16z_s3_runtime</name>
+  <version>0.3.0</version>
+  <description>Timestamped LiDAR detection, ownship navigation, and dynamic vessel tracking.</description>
+  <maintainer email="phase16z@invalid.local">Phase16Z</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>python3-setuptools</buildtool_depend>
+  <depend>builtin_interfaces</depend>
+  <depend>geometry_msgs</depend>
+  <depend>ament_index_python</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>nav_msgs</depend>
+  <depend>phase16z_perception_msgs</depend>
+  <depend>rclpy</depend>
+  <depend>rosgraph_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <exec_depend>sensor_msgs_py</exec_depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_ros</depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

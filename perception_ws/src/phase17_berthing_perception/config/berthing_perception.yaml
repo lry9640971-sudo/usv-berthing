@@ -1,0 +1,23 @@
+phase17_berthing_perception:
+  ros__parameters:
+    datum_latitude_deg: -33.724223
+    datum_longitude_deg: 150.679736
+    datum_altitude_m: 0.0
+    gps_lever_x_m: -0.85
+    gps_lever_y_m: 0.0
+    # 生产使用官方带噪码头位姿中的方向，不用固定场景角度覆盖输入。
+    use_topic_dock_orientation: true
+    sync_tolerance_ms: 100.0
+    minimum_lidar_inputs: 3
+    maximum_lidar_age_ms: 350.0
+    navigation_tolerance_ms: 150.0
+    dock_prior_max_age_s: 3.0
+    maximum_dock_range_m: 35.0
+    geometry_score_threshold: 0.18
+    minimum_geometry_support: 0.65
+    minimum_active_groups: 2
+    occupancy_minimum_cells: 5
+    entrance_offset_m: -8.0
+    output_stale_s: 0.5
+    base_frame: wamv/base_link
+    world_frame: team_enu

@@ -1,0 +1,74 @@
+schema_version: 1
+grid:
+  shape:
+  - 400
+  - 400
+  resolution_m_per_px: 0.05
+  row0: +X forward
+  col0: +Y left
+  ground_plane: base_link z=0
+phase9_structure_footprint_reproduced: true
+phase9_structure_occupied_cells: 21146
+phase9_structure_area_m2: 52.865
+static_ownship_projected_footprint_cells: 21262
+static_ownship_projected_footprint_area_m2: 53.15500000000001
+new_valid_rule: phase8_valid & ~bev_self_footprint_mask & ~bev_camera_ray_blocked_mask
+alpha_rule: self-vessel and no-coverage alpha=0
+image_self_occlusion_shape:
+- 6
+- 720
+- 1280
+bev_camera_ray_blocked_shape:
+- 6
+- 400
+- 400
+STATIC_FIXED_R3_SELF_BODY_MASK_RESOLVED: true
+DYNAMIC_ARTICULATED_SELF_BODY_MASK_RESOLVED: false
+PIXEL_EXACT_VISUAL_SELF_SEGMENTATION: false
+articulated_components:
+- wamv/left_engine_link_fixed_joint_lump__left_engine_vertical_axis_collision_collision
+- wamv/left_engine_link_fixed_joint_lump__left_engine_rear_end_collision_collision_1
+- wamv/left_propeller_link_fixed_joint_lump__left_propeller_collision_collision
+- wamv/right_engine_link_fixed_joint_lump__right_engine_vertical_axis_collision_collision
+- wamv/right_engine_link_fixed_joint_lump__right_engine_rear_end_collision_collision_1
+- wamv/right_propeller_link_fixed_joint_lump__right_propeller_collision_collision
+all_collision_added_vs_phase9_union_cells: 116
+sequential_union_added_cells_from_empty:
+  wamv/base_link_fixed_joint_lump__left_float_collision: 1824
+  wamv/base_link_fixed_joint_lump__left_mid_float_collision_1: 202
+  wamv/base_link_fixed_joint_lump__left_front_float_collision_2: 120
+  wamv/base_link_fixed_joint_lump__front_left_beam_lower_collision_3: 11
+  wamv/base_link_fixed_joint_lump__front_left_beam_upper_collision_4: 7
+  wamv/base_link_fixed_joint_lump__mid_left_beam_medium_collision_6: 8
+  wamv/base_link_fixed_joint_lump__mid_left_beam_upper_collision_7: 12
+  wamv/base_link_fixed_joint_lump__rear_left_beam_medium_collision_9: 7
+  wamv/base_link_fixed_joint_lump__rear_left_beam_upper_collision_10: 12
+  wamv/base_link_fixed_joint_lump__right_float_collision_12: 1824
+  wamv/base_link_fixed_joint_lump__right_mid_float_collision_13: 202
+  wamv/base_link_fixed_joint_lump__right_front_float_collision_14: 120
+  wamv/base_link_fixed_joint_lump__front_right_beam_lower_collision_15: 11
+  wamv/base_link_fixed_joint_lump__front_right_beam_upper_collision_16: 7
+  wamv/base_link_fixed_joint_lump__mid_right_beam_medium_collision_18: 8
+  wamv/base_link_fixed_joint_lump__mid_right_beam_upper_collision_19: 12
+  wamv/base_link_fixed_joint_lump__rear_right_beam_medium_collision_21: 7
+  wamv/base_link_fixed_joint_lump__rear_right_beam_upper_collision_22: 12
+  wamv/base_link_fixed_joint_lump__top_base_collision_24: 16740
+  wamv/base_link_fixed_joint_lump__back_lidar_collision_collision_27: 2
+  wamv/base_link_fixed_joint_lump__front_lidar_collision_collision_33: 2
+  wamv/base_link_fixed_joint_lump__left2_lidar_collision_collision_36: 2
+  wamv/base_link_fixed_joint_lump__left_lidar_collision_collision_39: 2
+  wamv/base_link_fixed_joint_lump__right2_lidar_collision_collision_42: 2
+  wamv/base_link_fixed_joint_lump__right_lidar_collision_collision_45: 2
+  wamv/left_engine_link_fixed_joint_lump__left_engine_vertical_axis_collision_collision: 12
+  wamv/left_engine_link_fixed_joint_lump__left_engine_rear_end_collision_collision_1: 9
+  wamv/left_propeller_link_fixed_joint_lump__left_propeller_collision_collision: 31
+  wamv/right_engine_link_fixed_joint_lump__right_engine_vertical_axis_collision_collision: 12
+  wamv/right_engine_link_fixed_joint_lump__right_engine_rear_end_collision_collision_1: 9
+  wamv/right_propeller_link_fixed_joint_lump__right_propeller_collision_collision: 31
+sequential_union_added_cells_note: 依赖inventory顺序，合计21262，不能解释为相对Phase9新增区域的可加组件分解
+runtime_supported_geometry_types:
+- box
+- cylinder
+- sphere
+mesh_intersector_unit_test_only: true
+runtime_mesh_loading_supported: false

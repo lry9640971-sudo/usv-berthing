@@ -1,0 +1,19 @@
+{
+  "schema": "phase16z_team_enu_frame_contract_v1",
+  "frame_id": "team_enu",
+  "axes": "x=East,y=North,z=Up",
+  "datum_source": "actual_runtime_sdf_spherical_coordinates",
+  "datum": {
+    "latitude_deg": -33.724223,
+    "longitude_deg": 150.679736,
+    "altitude_m": 0.0
+  },
+  "heading_deg": 0.0,
+  "world_frame_orientation": "ENU",
+  "sdf_path": "external_scene/perception_user_world_fixed_15349.sdf",
+  "sdf_sha256": "47693131780dfc46797aedaf3dc5facc3fb9c946029284ce80e5f339f5341213",
+  "production_feedback": false,
+  "evaluation_only_world_to_team_enu_fit_forbidden": true,
+  "moving_enu_to_base": "timestamped_pose_buffer_interpolation",
+  "fixed_sensor_to_base": "model_proven_fixed_extrinsic_only"
+}

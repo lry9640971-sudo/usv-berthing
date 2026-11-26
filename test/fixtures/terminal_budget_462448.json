@@ -1,0 +1,106 @@
+{
+  "stamp_sim_s": 462.448,
+  "prediction_stamp_sim_s": 462.6,
+  "vessel": {
+    "x": -530.1179979754926,
+    "y": 161.82150249796496,
+    "yaw": -1.5419391395024005,
+    "surge": 0.3985031760122472,
+    "sway": -0.08517573632664456,
+    "yaw_rate": -0.07095371249652797
+  },
+  "prediction_initial_vessel": {
+    "x": -530.1293475060673,
+    "y": 161.7607474292916,
+    "yaw": -1.5531750392775094,
+    "surge": 0.3972418141807963,
+    "sway": -0.08268389522361107,
+    "yaw_rate": -0.07668681747640997
+  },
+  "guidance": {
+    "goal_xy": [
+      -530.1696008371961,
+      160.14781900690375
+    ],
+    "desired_surge": 0.44532117609727445,
+    "desired_yaw_rate": 0.1154633333693772,
+    "goal_yaw": -1.6443530468326062,
+    "terminal": true,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "terminal"
+  },
+  "disturbance": {
+    "force_world_x_n": -7.486400078185422,
+    "force_world_y_n": -5.471103271631544,
+    "yaw_moment_nm": -41.29437882392591
+  },
+  "moving_obstacles": [],
+  "decision_diagnostics": {
+    "solver_success": false,
+    "solver_message": "Iteration limit reached",
+    "solver_iterations": 8,
+    "evaluated_sequences": 62,
+    "certified_safe_sequences": 1,
+    "decision": "direct_force_sequence",
+    "seed_source": "current_state_feedback",
+    "previous_seed_constraint_m": -0.31355559887495404,
+    "feasible_seed_count": 1,
+    "selected_controls_n": [
+      [
+        -47.67601028747838,
+        -7.127391879396399
+      ],
+      [
+        -35.84767997564148,
+        5.41575101221315
+      ],
+      [
+        -27.813559496456815,
+        12.903394506268038
+      ],
+      [
+        -24.562484278017504,
+        15.842237682034503
+      ],
+      [
+        -23.45952801071231,
+        16.820063907252088
+      ],
+      [
+        -23.106301443122184,
+        17.127574749045472
+      ]
+    ],
+    "prediction_stamp_sim_s": 462.6,
+    "selection_at_execution_state": true
+  },
+  "static_point_radius_m": 0.14142135834465194,
+  "previous_controls_n": [
+    [
+      50.76659731317975,
+      3.7920541545135187
+    ],
+    [
+      135.73571721253145,
+      -47.6550861754243
+    ],
+    [
+      56.045533246032164,
+      108.83827254253195
+    ],
+    [
+      59.848236432139565,
+      -6.08216893997684
+    ],
+    [
+      -77.61753864985286,
+      -97.47327367029781
+    ],
+    [
+      6.883918929748687,
+      16.053589092307853
+    ]
+  ],
+  "source_case": "acceptance_20261003_20261004_052011"
+}

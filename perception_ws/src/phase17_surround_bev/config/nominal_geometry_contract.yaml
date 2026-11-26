@@ -1,0 +1,437 @@
+schema_version: 1
+source_freeze:
+  commit: 75babf08680736cb932b8e078fdeae1531a10134
+  tree: 9952e074f1113f4091f32d69e4ad9309b1b17423
+  tracked_count: 427
+source_files:
+  source_contract: package://phase17_surround_bev/config/source_contract.json
+  source_contract_sha256: 607118d10fd8d1d2e4504c71dc7ef84411bc2487a7def10317085454fd946342
+  expanded_urdf: external_scene/perception_expanded.urdf
+  expanded_urdf_sha256: abbc3de85933df4ff2f704a206bc453d51ab122593a53610bb809469e2d93a62
+  sdformat_camera_schema: /opt/ros/jazzy/opt/sdformat_vendor/share/sdformat14/1.10/camera.sdf
+  sdformat_camera_schema_sha256: fd120ebeaa38dc5d51ed858967fdb2db3d982363af6c03987d0aacc9d835744d
+lens:
+  sensor_type: wide_angle_camera
+  width: 1280
+  height: 720
+  horizontal_fov_rad: 3.054
+  c1: 1.05
+  c2: 4.0
+  c3: 0.0
+  configured_f: 1.0
+  fun: tan
+  scale_to_hfov: true
+  cutoff_angle_rad: 1.5707
+  effective_f_normalized: 2.372392071093991
+  continuous_image_center_uv:
+  - 640.0
+  - 360.0
+  mapping: r=c1*f*tan(theta/c2+c3)
+  scale_to_hfov_rule: f=1/(c1*tan((horizontal_fov/2)/c2+c3))
+  pixel_rule: u=W*(0.5+x_norm/2); v=H*(0.5-aspect*y_norm/2)
+coordinate_convention:
+  vectors: column
+  transform_chain: p_base=T_base_lidar*p_lidar; p_camera=inverse(T_base_camera)*p_base
+  ros_sensor: +X forward, +Y left, +Z up
+  render_ray: +X right, +Y up, +Z optical axis
+  sensor_to_render: '[x_render,y_render,z_render]=[-y_sensor,z_sensor,x_sensor]'
+  image: +u right, +v down
+  rpy: fixed-axis Rz(yaw)*Ry(pitch)*Rx(roll), radians
+metrics_preregistration:
+  grayscale: 0.299R+0.587G+0.114B via cv2 RGB2GRAY
+  gaussian_kernel:
+  - 5
+  - 5
+  gaussian_sigma: 1.2
+  canny_low: 60
+  canny_high: 120
+  canny_l2gradient: true
+  sobel_kernel: 3
+  lidar_edge_jump: max(0.5m, 0.05*nearer_range)
+  nan_boundary_is_edge: false
+  edge_support_px:
+  - 3.0
+  - 5.0
+  minimum_projected_depth_edges: 100
+  low_evidence_policy: nominal 或 control 的投影深度边缘少于100时不进入胜负和bootstrap
+  primary_score: control median nearest-image-edge distance - nominal median nearest-image-edge distance
+  bootstrap_seed: 20260723
+  bootstrap_replicates: 10000
+  bootstrap_cluster: bag x target_header_stamp
+  minimum_eligible_clusters_for_pass: 18
+  minimum_nominal_evidence_clusters_per_pair: 18
+negative_controls:
+  composition: T_control=Delta_T_camera*T_camera_lidar; 每次只改变一个camera-frame自由度
+  translation_m:
+    x:
+    - -0.5
+    - 0.5
+    y:
+    - -0.5
+    - 0.5
+    z:
+    - -0.5
+    - 0.5
+  rotation_deg:
+    roll:
+    - -10.0
+    - 10.0
+    pitch:
+    - -10.0
+    - 10.0
+    yaw:
+    - -10.0
+    - 10.0
+  cycle_mismatch: front->back->left->left2->right->right2->front
+  axis_sign_error: 错误地采用render_up=-sensor_z；其他参数不变
+  no_search_or_optimization: true
+nominal_transforms:
+  front:
+    T_base_camera:
+    - - 0.906307787036
+      - 0.0
+      - 0.422618261742
+      - 7.0
+    - - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - -0.422618261556
+      - -3.8e-11
+      - 0.906307787123
+      - 7.0
+    - - -1.73e-10
+      - 1.0
+      - -3.8e-11
+      - 0.0
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 3.8e-11
+      - 1.0
+      - 0.042261826174
+    - - -1.73e-10
+      - 1.0
+      - -3.8e-11
+      - 0.0
+    - - -1.0
+      - -1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 6.6628105871439265e-21
+  back:
+    T_base_camera:
+    - - -0.906307787036
+      - 4.1e-10
+      - -0.422618261742
+      - -7.0
+    - - -3.72e-10
+      - -1.0
+      - -1.73e-10
+      - 0.0
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - 0.422618261556
+      - -3.72e-10
+      - -0.906307787123
+      - -7.0
+    - - 0.0
+      - -1.0
+      - 4.1e-10
+      - -0.0
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 7.82e-10
+      - 1.0
+      - 0.042261826174
+    - - 1.73e-10
+      - 1.0
+      - -7.82e-10
+      - 0.0
+    - - -1.0
+      - 1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 1.355648469831199e-19
+  left:
+    T_base_camera:
+    - - -1.86e-10
+      - -1.0
+      - -8.7e-11
+      - -6.0
+    - - 0.906307787036
+      - -2.05e-10
+      - 0.422618261742
+      - 1.6264
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - -8.7e-11
+      - -1.0
+      - 5.96e-10
+      - -6.0
+    - - -0.422618261556
+      - 5.77e-10
+      - 0.906307787123
+      - 1.6264
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 7.82e-10
+      - 1.0
+      - 0.042261826174
+    - - 1.73e-10
+      - 1.0
+      - -7.82e-10
+      - 0.0
+    - - -1.0
+      - 1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 1.355648469831199e-19
+  left2:
+    T_base_camera:
+    - - -1.86e-10
+      - -1.0
+      - -8.7e-11
+      - 6.0
+    - - 0.906307787036
+      - -2.05e-10
+      - 0.422618261742
+      - 1.6264
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - -8.7e-11
+      - -1.0
+      - 5.96e-10
+      - 6.0
+    - - -0.422618261556
+      - 5.77e-10
+      - 0.906307787123
+      - 1.6264
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 7.82e-10
+      - 1.0
+      - 0.042261826174
+    - - 1.73e-10
+      - 1.0
+      - -7.82e-10
+      - 0.0
+    - - -1.0
+      - 1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 1.355648469831199e-19
+  right:
+    T_base_camera:
+    - - -1.86e-10
+      - 1.0
+      - -8.7e-11
+      - -6.0
+    - - -0.906307787036
+      - -2.05e-10
+      - -0.422618261742
+      - -1.6264
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - -8.7e-11
+      - 1.0
+      - -2.24e-10
+      - -6.0
+    - - 0.422618261556
+      - -1.67e-10
+      - -0.906307787123
+      - -1.6264
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 3.8e-11
+      - 1.0
+      - 0.042261826174
+    - - -1.73e-10
+      - 1.0
+      - -3.8e-11
+      - 0.0
+    - - -1.0
+      - -1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 6.6628105871439265e-21
+  right2:
+    T_base_camera:
+    - - -1.86e-10
+      - 1.0
+      - -8.7e-11
+      - 6.0
+    - - -0.906307787036
+      - -2.05e-10
+      - -0.422618261742
+      - -1.6264
+    - - -0.422618261742
+      - 0.0
+      - 0.906307787036
+      - 1.95
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_base_lidar:
+    - - -8.7e-11
+      - 1.0
+      - -2.24e-10
+      - 6.0
+    - - 0.422618261556
+      - -1.67e-10
+      - -0.906307787123
+      - -1.6264
+    - - -0.906307787123
+      - -1.73e-10
+      - -0.422618261556
+      - 1.85
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    T_camera_lidar:
+    - - 2.05e-10
+      - 3.8e-11
+      - 1.0
+      - 0.042261826174
+    - - -1.73e-10
+      - 1.0
+      - -3.8e-11
+      - 0.0
+    - - -1.0
+      - -1.73e-10
+      - 2.05e-10
+      - -0.090630778704
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    inverse_product_max_abs_error: 6.6628105871439265e-21
+diagnostic_emx:
+  T_base_forward_lidar:
+  - - 1.0
+    - 0.0
+    - 0.0
+    - 7.0
+  - - 0.0
+    - 1.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 0.0
+    - 1.0
+    - 1.58
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  update_rate_hz: 10.0
+  lidar:
+    horizontal_max_angle_rad: 1.0471975511965976
+    horizontal_min_angle_rad: -1.0471975511965976
+    horizontal_resolution: 1.0
+    horizontal_samples: 360
+    max_range_m: 200.0
+    min_range_m: 0.1
+    noise_stddev_m: 0.02
+    vertical_max_angle_rad: 0.1308996938995747
+    vertical_min_angle_rad: -0.1308996938995747
+    vertical_samples: 96
+  excluded_from_pairwise_pass_criterion: true

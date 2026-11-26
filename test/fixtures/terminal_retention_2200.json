@@ -1,0 +1,73 @@
+{
+  "scope": "actual_052011_observed_map_and_disturbance_with_saved_continuous_model_state; hypothetical_0.12s_delay_not_Gazebo_score",
+  "vessel": {
+    "x": -530.2140538214358,
+    "y": 161.05209380901343,
+    "yaw": -1.4653804576495093,
+    "surge": 0.48605035639388955,
+    "sway": -0.10125699245272231,
+    "yaw_rate": -0.05697715408627437
+  },
+  "prediction_initial_vessel": {
+    "x": -530.2203098731387,
+    "y": 160.9912678469501,
+    "yaw": -1.4740527837446271,
+    "surge": 0.5115402410988389,
+    "sway": -0.10451384177360744,
+    "yaw_rate": -0.086726529364229
+  },
+  "guidance": {
+    "goal_xy": [
+      -530.1696008371961,
+      160.14781900690375
+    ],
+    "desired_surge": 0.15834169053111846,
+    "desired_yaw_rate": 0.3,
+    "goal_yaw": -1.6443530468326062,
+    "terminal": true,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "terminal"
+  },
+  "disturbance": {
+    "force_world_x_n": -7.486400078185422,
+    "force_world_y_n": -5.471103271631544,
+    "yaw_moment_nm": -41.29437882392591
+  },
+  "previous_controls_n": [
+    [
+      163.95034971706139,
+      -22.643537153019345
+    ],
+    [
+      134.25987211459548,
+      -86.8518933008808
+    ],
+    [
+      -189.34992885860922,
+      17.944701377250833
+    ],
+    [
+      -168.24777064856912,
+      143.44830068910917
+    ],
+    [
+      -20.43154329595703,
+      91.03855967628203
+    ],
+    [
+      8.087331144342787,
+      -37.98935567064328
+    ]
+  ],
+  "previous_force_durations_s": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ],
+  "previous_prediction_stamp_sim_s": 2.12,
+  "prediction_stamp_sim_s": 2.3200000000000003
+}

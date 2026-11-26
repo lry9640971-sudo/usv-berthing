@@ -1,0 +1,46 @@
+{
+  "frozen_revision": "8602b06",
+  "seeds": [
+    20261005,
+    20261003,
+    20261004,
+    20261006,
+    20261007
+  ],
+  "stage": "ALL_FIVE_PASSED",
+  "results": [
+    {
+      "seed": 20261005,
+      "case": "acceptance_20261005_20261005_011415",
+      "passed": true,
+      "stop_reason": "CONTROLLER_COMPLETION"
+    },
+    {
+      "seed": 20261003,
+      "case": "acceptance_20261003_20261005_012827",
+      "passed": true,
+      "stop_reason": "CONTROLLER_COMPLETION"
+    },
+    {
+      "seed": 20261004,
+      "case": "acceptance_20261004_20261005_020529",
+      "passed": true,
+      "stop_reason": "CONTROLLER_COMPLETION"
+    },
+    {
+      "seed": 20261006,
+      "case": "acceptance_20261006_20261005_021711",
+      "passed": true,
+      "stop_reason": "CONTROLLER_COMPLETION"
+    },
+    {
+      "seed": 20261007,
+      "case": "acceptance_20261007_20261005_022927",
+      "passed": true,
+      "stop_reason": "CONTROLLER_COMPLETION"
+    }
+  ],
+  "current_seed": 20261007,
+  "current_case": "acceptance_20261007_20261005_022927",
+  "all_five_passed": true
+}

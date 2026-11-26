@@ -1,0 +1,117 @@
+base_frame: wamv/base_link
+extrinsics:
+  /wamv/sensors/lidars/front_lidar_sensor/points:
+    sensor_link: wamv/front_lidar_link
+    joint_chain_base_to_sensor:
+    - wamv/base_to_front_lidar_post_joint
+    - wamv/front_lidar_post_to_front_lidar_post_arm_joint
+    - wamv/front_lidar_post_arm_to_front_lidar_joint
+    T_base_sensor:
+    - - -0.42261826174069933
+      - 0.0
+      - 0.90630778703665
+      - 0.7
+    - - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+    - - -0.90630778703665
+      - 0.0
+      - -0.42261826174069933
+      - 2.05
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  /wamv/sensors/lidars/back_lidar_sensor/points:
+    sensor_link: wamv/back_lidar_link
+    joint_chain_base_to_sensor:
+    - wamv/base_to_back_lidar_post_joint
+    - wamv/back_lidar_post_to_back_lidar_post_arm_joint
+    - wamv/back_lidar_post_arm_to_back_lidar_joint
+    T_base_sensor:
+    - - 0.42261826174069933
+      - -1.2246467991473532e-16
+      - -0.90630778703665
+      - -0.7
+    - - -5.1755810150196575e-17
+      - -1.0
+      - 1.1099069304367546e-16
+      - 0.0
+    - - -0.90630778703665
+      - 0.0
+      - -0.42261826174069933
+      - 2.05
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  /wamv/sensors/lidars/left_lidar_sensor/points:
+    sensor_link: wamv/left_lidar_link
+    joint_chain_base_to_sensor:
+    - wamv/base_to_left_lidar_post_joint
+    - wamv/left_lidar_post_to_left_lidar_post_arm_joint
+    - wamv/left_lidar_post_arm_to_left_lidar_joint
+    T_base_sensor:
+    - - -2.5877905075098288e-17
+      - -1.0
+      - 5.549534652183773e-17
+      - 0.0
+    - - -0.42261826174069933
+      - 6.123233995736766e-17
+      - 0.90630778703665
+      - 0.45
+    - - -0.90630778703665
+      - 0.0
+      - -0.42261826174069933
+      - 2.05
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  /wamv/sensors/lidars/right_lidar_sensor/points:
+    sensor_link: wamv/right_lidar_link
+    joint_chain_base_to_sensor:
+    - wamv/base_to_right_lidar_post_joint
+    - wamv/right_lidar_post_to_right_lidar_post_arm_joint
+    - wamv/right_lidar_post_arm_to_right_lidar_joint
+    T_base_sensor:
+    - - -2.5877905075098288e-17
+      - 1.0
+      - 5.549534652183773e-17
+      - 0.0
+    - - 0.42261826174069933
+      - 6.123233995736766e-17
+      - -0.90630778703665
+      - -0.45
+    - - -0.90630778703665
+      - 0.0
+      - -0.42261826174069933
+      - 2.05
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  /wamv/sensors/lidars/forward_lidar_sensor/points:
+    sensor_link: wamv/forward_lidar_link
+    joint_chain_base_to_sensor:
+    - wamv/base_to_forward_lidar_post_joint
+    - wamv/forward_lidar_post_to_forward_lidar_post_arm_joint
+    - wamv/forward_lidar_post_arm_to_forward_lidar_joint
+    T_base_sensor:
+    - - 1.0
+      - 0.0
+      - 0.0
+      - 0.75
+    - - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 1.0
+      - 1.65
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0

@@ -1,0 +1,110 @@
+{
+  "stop_reason": "CONTROLLER_COMPLETION",
+  "official_single_run_passed": true,
+  "gates": {
+    "controller_reported_completion": true,
+    "independent_position": true,
+    "static_avoidance": true,
+    "dynamic_avoidance": true,
+    "contact_speed": true,
+    "independent_completion_speed": true,
+    "maximum_planning_and_control_s": true,
+    "runtime_wall_s": true
+  },
+  "collision_episodes": {
+    "static": 0,
+    "dynamic": 0
+  },
+  "total_obstacles": {
+    "static": 85,
+    "dynamic": 12
+  },
+  "avoidance_success_fraction": {
+    "static": 1.0,
+    "dynamic": 1.0
+  },
+  "berth_contact_speed_mps": [],
+  "contact_speed_evidence": "NOT_OBSERVED",
+  "independent_completion_speed_mps": 0.1434303388058373,
+  "completion_velocity_reference": "centered_40ms_instantaneous_quadratic",
+  "legacy_preceding_0p2s_speed_mps": 0.19408650663674787,
+  "independent_target_xy_m": [
+    -530.1420392824178,
+    160.2444201707819
+  ],
+  "independent_final_position_error_m": 0.060477325528979366,
+  "elapsed_wall_s": 686.96487543,
+  "elapsed_sim_s": 488.76,
+  "maximum_planning_and_control_s": 0.2923368740000569,
+  "controller_report": {
+    "task_completed": true,
+    "state": "COMPLETE",
+    "bay_id": 1,
+    "stamp_sim_s": 488.776,
+    "position_xy_m": [
+      -530.1769470758685,
+      160.19502500948107
+    ],
+    "speed_mps": 0.14232289001232995,
+    "elapsed_wall_s": 685.823269525,
+    "elapsed_sim_s": 488.672,
+    "max_single_plan_duration_s": 0.2909293030000981,
+    "max_control_cycle_s": 0.2923368740000569,
+    "max_force_execution_s": 0.006490058000053978,
+    "max_force_schedule_lateness_sim_s": 0.016000000000019554,
+    "force_schedule_transition_count": 0,
+    "source": "production_navigation_and_verified_berth"
+  },
+  "monitor_counts": {
+    "contact_stream_messages": 57735,
+    "truth_pose_messages": 23045,
+    "tracks_messages": 3577,
+    "nonempty_tracks_messages": 932
+  },
+  "selected_bay": {
+    "bay_id": 1,
+    "entry_pose": [
+      -529.3917891385082,
+      169.6437718336363,
+      -1.653974085019645
+    ],
+    "final_pose": [
+      -530.1810669981647,
+      160.17661595342304,
+      -1.653974085019645
+    ]
+  },
+  "evaluation_scope": "single_run_independent_evaluation_requires_five_frozen_version_runs",
+  "mode": "acceptance",
+  "process_return_codes": {
+    "simulation": 0,
+    "resources": 0,
+    "monitor": 0,
+    "perception": 0,
+    "controller": 0
+  },
+  "source_version": {
+    "frozen_revision": "8602b06",
+    "regression_passed": 236,
+    "regression_evidence": "evidence/regression_navigation_attitude_projection_01",
+    "mode": "acceptance",
+    "seed": 20261004,
+    "original_initial_pose": [
+      -703.1,
+      363.4,
+      0.0,
+      0.0,
+      0.0,
+      2.468
+    ],
+    "static_count": 85,
+    "dynamic_count": 12,
+    "original_lidar_count": 5,
+    "pose_override": false,
+    "controller_wall_limit_s": 900,
+    "rendering": "EGL llvmpipe LP_NUM_THREADS=6",
+    "change_scope": "causal_orientation_pose_fit_and_actual_gps_lever_covariance_only_original_control_safety_and_gates_unchanged",
+    "scope": "same frozen business; truth only independently evaluates; diagnostic recording disabled"
+  },
+  "source_case": "acceptance_20261004_20261005_020529"
+}

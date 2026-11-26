@@ -1,0 +1,11 @@
+#include "phase16z_perception_msgs/msg/DynamicTrack.idl"
+#include "std_msgs/msg/Header.idl"
+
+module phase16z_perception_msgs {
+  module msg {
+    struct DynamicTrackArray {
+      std_msgs::msg::Header header;
+      sequence<phase16z_perception_msgs::msg::DynamicTrack> tracks;
+    };
+  };
+};

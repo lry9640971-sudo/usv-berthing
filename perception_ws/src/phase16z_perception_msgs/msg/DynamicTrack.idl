@@ -1,0 +1,29 @@
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "std_msgs/msg/Header.idl"
+
+module phase16z_perception_msgs {
+  module msg {
+    const uint8 UNKNOWN = 0;
+    const uint8 BOAT = 1;
+    struct DynamicTrack {
+      std_msgs::msg::Header header;
+      uint32 track_id;
+      geometry_msgs::msg::Pose pose;
+      geometry_msgs::msg::Twist velocity;
+      float speed_mps;
+      float heading_rad;
+      float confidence;
+      float position_covariance_xx;
+      float position_covariance_xy;
+      float position_covariance_yy;
+      float velocity_covariance_xx;
+      float velocity_covariance_xy;
+      float velocity_covariance_yy;
+      float age_sec;
+      uint32 hit_count;
+      uint32 missed_count;
+      uint8 classification;
+    };
+  };
+};

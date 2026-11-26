@@ -1,0 +1,62 @@
+{
+  "stamp_sim_s": 387.8,
+  "vessel": {
+    "x": -550.050506575403,
+    "y": 207.69877448159053,
+    "yaw": -0.5852539717754239,
+    "surge": 0.5981878285176677,
+    "sway": 0.13541528513112003,
+    "yaw_rate": -0.2730952210095203
+  },
+  "guidance": {
+    "goal_xy": [
+      -528.9662811888804,
+      173.69312244667012
+    ],
+    "desired_surge": 0.7432343105993554,
+    "desired_yaw_rate": -0.3444250479820683,
+    "goal_yaw": null,
+    "terminal": false,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "constant"
+  },
+  "disturbance": {
+    "force_world_x_n": -0.13820245273352771,
+    "force_world_y_n": 7.16681806281297,
+    "yaw_moment_nm": 23.589976336057
+  },
+  "plan_status": "NO_SAFE_TRAJECTORY",
+  "public_tracks": {
+    "stamp_sim_s": 387.8,
+    "tracks": [
+      {
+        "track_id": 21,
+        "xy": [
+          -551.7966679822732,
+          195.84693370162663
+        ],
+        "velocity_xy": [
+          -0.69209127216188,
+          1.4687467425398861
+        ],
+        "confidence": 0.9313661456108093,
+        "missed_count": 0
+      },
+      {
+        "track_id": 22,
+        "xy": [
+          -549.2366112977592,
+          199.86499661952624
+        ],
+        "velocity_xy": [
+          -0.5837075791815098,
+          1.6110315776542263
+        ],
+        "confidence": 0.8999999761581421,
+        "missed_count": 0
+      }
+    ]
+  },
+  "scope": "生产状态与公开轨迹；原始完整地图/速度协方差未保存，回归使用明确的协方差敏感性场景"
+}

@@ -1,0 +1,86 @@
+{
+  "stop_reason": "CONTROLLER_COMPLETION",
+  "official_single_run_passed": true,
+  "gates": {
+    "controller_reported_completion": true,
+    "independent_position": true,
+    "static_avoidance": true,
+    "dynamic_avoidance": true,
+    "contact_speed": true,
+    "independent_completion_speed": true,
+    "maximum_planning_and_control_s": true,
+    "runtime_wall_s": true
+  },
+  "collision_episodes": {
+    "static": 0,
+    "dynamic": 0
+  },
+  "total_obstacles": {
+    "static": 87,
+    "dynamic": 12
+  },
+  "avoidance_success_fraction": {
+    "static": 1.0,
+    "dynamic": 1.0
+  },
+  "berth_contact_speed_mps": [],
+  "contact_speed_evidence": "NOT_OBSERVED",
+  "independent_completion_speed_mps": 0.07175658316859407,
+  "completion_velocity_reference": "centered_40ms_instantaneous_quadratic",
+  "legacy_preceding_0p2s_speed_mps": 0.2119960707536661,
+  "independent_target_xy_m": [
+    -530.1420392824178,
+    160.2444201707819
+  ],
+  "independent_final_position_error_m": 0.15612755267461917,
+  "elapsed_wall_s": 720.0277235609999,
+  "elapsed_sim_s": 454.648,
+  "maximum_planning_and_control_s": 0.3667930479998631,
+  "controller_report": {
+    "task_completed": true,
+    "state": "COMPLETE",
+    "bay_id": 1,
+    "stamp_sim_s": 454.52,
+    "position_xy_m": [
+      -530.291685881775,
+      160.19634872841704
+    ],
+    "speed_mps": 0.07148071344058253,
+    "elapsed_wall_s": 718.88826149,
+    "elapsed_sim_s": 454.416,
+    "max_single_plan_duration_s": 0.36628758100005143,
+    "max_control_cycle_s": 0.3667930479998631,
+    "max_force_execution_s": 0.0013799270000163233,
+    "max_force_schedule_lateness_sim_s": 0.04800000000000182,
+    "force_schedule_transition_count": 0,
+    "source": "production_navigation_and_verified_berth"
+  },
+  "monitor_counts": {
+    "contact_stream_messages": 53400,
+    "truth_pose_messages": 21842,
+    "tracks_messages": 3181,
+    "nonempty_tracks_messages": 805
+  },
+  "selected_bay": {
+    "bay_id": 1,
+    "entry_pose": [
+      -529.2060213493105,
+      169.30413079858207,
+      -1.679909253977224
+    ],
+    "final_pose": [
+      -530.2405385393903,
+      159.8606264604971,
+      -1.679909253977224
+    ]
+  },
+  "evaluation_scope": "single_run_independent_evaluation_requires_five_frozen_version_runs",
+  "mode": "acceptance",
+  "process_return_codes": {
+    "simulation": 0,
+    "resources": 0,
+    "monitor": 0,
+    "perception": 0,
+    "controller": 0
+  }
+}

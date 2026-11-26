@@ -1,0 +1,21 @@
+phase17_local_environment:
+  ros__parameters:
+    resolution_m: 0.20
+    width: 400
+    height: 400
+    origin_x_m: -40.0
+    origin_y_m: -40.0
+    minimum_range_m: 0.5
+    maximum_range_m: 40.0
+    # 官方水动力 fluid_level=0；该值在固定 ENU 中，不随船体起伏或低平陆地改变。
+    mean_water_elevation_m: 0.0
+    sync_tolerance_ms: 100.0
+    minimum_lidar_inputs: 3
+    maximum_lidar_age_ms: 350.0
+    # 只标记未知区域的缓冲代价50；实物100与射线空闲0保持，规划精查完整船体。
+    inflation_radius_m: 0.4
+    minimum_occupied_cell_hits: 2
+    angular_ray_bin_deg: 0.5
+    output_stale_s: 0.5
+    # XY 为锚点时刻的水平投影，原始船体系的横摇/纵摇已在三维点云中补偿。
+    base_frame: wamv/base_link_planar

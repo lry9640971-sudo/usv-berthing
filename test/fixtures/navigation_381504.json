@@ -1,0 +1,64 @@
+{
+  "scope": "production_inputs_only; excludes_evaluation_GT",
+  "source_run": "acceptance_20261003_20261004_170541",
+  "stamp_sim_s": 381.504,
+  "vessel": {
+    "x": -548.3414170763814,
+    "y": 198.0243133409579,
+    "yaw": 2.802609836914721,
+    "surge": -0.49086457254243815,
+    "sway": -0.14575936024023192,
+    "yaw_rate": -0.2706881746831432
+  },
+  "guidance": {
+    "goal_xy": [
+      -549.2,
+      194.0
+    ],
+    "desired_surge": 0.0,
+    "desired_yaw_rate": 0.5,
+    "goal_yaw": null,
+    "terminal": false,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "constant"
+  },
+  "disturbance": {
+    "force_world_x_n": -4.653506265021606,
+    "force_world_y_n": -18.45589549039668,
+    "yaw_moment_nm": -14.702046226671357
+  },
+  "moving_obstacles": [
+    {
+      "track_id": 27,
+      "x": -558.1329489999105,
+      "y": 219.2153800759717,
+      "vx": 1.3545696932204583,
+      "vy": 1.1280987490596461,
+      "radius_m": 1.5,
+      "velocity_std_mps": 0.4560835704601881
+    },
+    {
+      "track_id": 26,
+      "x": -546.2776907902995,
+      "y": 194.1446693144045,
+      "vx": -0.9112430564768612,
+      "vy": 0.40956883730451893,
+      "radius_m": 1.5,
+      "velocity_std_mps": 0.31315365616413476
+    }
+  ],
+  "previous_setpoint": [
+    -0.3,
+    -0.15
+  ],
+  "previous_force_n": {
+    "left_n": -83.55754547644915,
+    "right_n": 55.02596724283931
+  },
+  "old_plan_status": "NO_SAFE_TRAJECTORY",
+  "old_published_force_n": {
+    "left_n": -400.0,
+    "right_n": -19.620709015643286
+  }
+}

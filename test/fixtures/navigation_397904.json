@@ -1,0 +1,79 @@
+{
+  "scope": "production_inputs_only; excludes_evaluation_GT",
+  "source_run": "acceptance_20261003_20261004_170541",
+  "stamp_sim_s": 397.904,
+  "vessel": {
+    "x": -539.5594757987666,
+    "y": 191.4777373303476,
+    "yaw": 1.7656110836406493,
+    "surge": -0.42810662399627203,
+    "sway": 0.013198438745413522,
+    "yaw_rate": 0.0005745151511647609
+  },
+  "guidance": {
+    "goal_xy": [
+      -535.6,
+      189.20000000000002
+    ],
+    "desired_surge": 0.0,
+    "desired_yaw_rate": -0.5,
+    "goal_yaw": null,
+    "terminal": false,
+    "use_route": true,
+    "position_tolerance_m": 0.0,
+    "feedback": "constant"
+  },
+  "disturbance": {
+    "force_world_x_n": -8.566091818203114,
+    "force_world_y_n": -9.913183616633043,
+    "yaw_moment_nm": -5.494889106325407
+  },
+  "moving_obstacles": [],
+  "previous_setpoint": [
+    -0.3,
+    0.0
+  ],
+  "previous_force_n": {
+    "left_n": -14.336564009987283,
+    "right_n": -7.942158609952516
+  },
+  "old_plan_status": "SAFE",
+  "old_published_force_n": {
+    "left_n": -15.056801779504845,
+    "right_n": -10.775652167343921
+  },
+  "coarse_false_safe_controls_n": [
+    [
+      399.99965206240404,
+      -141.70210566710904
+    ],
+    [
+      239.84653116313203,
+      -399.99864632272215
+    ],
+    [
+      399.9992895019351,
+      -399.99582606901123
+    ],
+    [
+      399.99934993529445,
+      -399.9997336010149
+    ],
+    [
+      399.9993851912109,
+      241.65111607137771
+    ],
+    [
+      264.215531164139,
+      201.98978797997995
+    ]
+  ],
+  "coarse_false_safe_durations_s": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ]
+}
